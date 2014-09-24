@@ -5,7 +5,6 @@ angular.module("sportsStore")
 
   $http.get(dataUrl)
   .success(function (data) {
-    console.log(data);
     $scope.data.products = data;
   })
   .error(function (error) {
